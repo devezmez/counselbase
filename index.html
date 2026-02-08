@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consejo Base - Firebase Auth</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      button {
+        padding: 0.6rem 1rem;
+        margin-right: 0.5rem;
+        cursor: pointer;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+      }
+      .status {
+        margin-top: 1rem;
+        padding: 0.75rem;
+        background: #f4f4f4;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Firebase Auth (Gmail)</h1>
+      <p>
+        Esta pantalla es el primer paso: crear usuario con correo/contraseña o
+        iniciar sesión con Google.
+      </p>
+
+      <section>
+        <h2>Crear cuenta</h2>
+        <label for="signup-email">Correo</label>
+        <input id="signup-email" type="email" placeholder="correo@email.com" />
+        <label for="signup-password">Contraseña</label>
+        <input id="signup-password" type="password" placeholder="********" />
+        <button id="signup-button">Crear cuenta</button>
+      </section>
+
+      <section>
+        <h2>Iniciar sesión</h2>
+        <label for="login-email">Correo</label>
+        <input id="login-email" type="email" placeholder="correo@email.com" />
+        <label for="login-password">Contraseña</label>
+        <input id="login-password" type="password" placeholder="********" />
+        <button id="login-button">Entrar</button>
+      </section>
+
+      <section>
+        <h2>Acceso con Google</h2>
+        <button id="google-button">Continuar con Google</button>
+      </section>
+
+      <section>
+        <h2>Sesión</h2>
+        <button id="logout-button">Cerrar sesión</button>
+      </section>
+
+      <div class="status" id="status">Esperando acción...</div>
+    </main>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>
